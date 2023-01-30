@@ -22,7 +22,7 @@ public class BookService {
 
     public List<Book> getBooks(String genre, boolean available, String author){
          //find the elements of the list by yourself
-        List<Book> books = new ArrayList<>();
+        List<Book> books =  new ArrayList<>();
 
         if(genre != null && author != null){
             books = bookRepository2.findBooksByGenreAuthor(genre, author, available);
