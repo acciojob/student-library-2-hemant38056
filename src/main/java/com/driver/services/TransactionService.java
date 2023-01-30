@@ -80,7 +80,7 @@ public class TransactionService {
         card.setBooks(bookList);
 
         cardRepository5.save(card);
-        bookRepository5.save(book);
+        bookRepository5.updateBook(book);
 
         transaction.setTransactionStatus(TransactionStatus.SUCCESSFUL);
 

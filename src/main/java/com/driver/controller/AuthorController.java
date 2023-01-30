@@ -18,7 +18,7 @@ public class AuthorController {
     AuthorService authorService;
 
     //Write createAuthor API with required annotations
-    @PostMapping("/createAuthor")
+    @PostMapping("/")
     public ResponseEntity<String> createAuthor(@RequestBody()Author author){
         authorService.create(author);
         return new ResponseEntity<>("Success", HttpStatus.CREATED);

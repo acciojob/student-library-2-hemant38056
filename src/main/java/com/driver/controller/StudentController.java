@@ -18,6 +18,7 @@ public class StudentController {
 
 
 
+
     //Add required annotations
     @GetMapping("/studentByEmail")
     public ResponseEntity getStudentByEmail(@RequestParam("email") String email){
